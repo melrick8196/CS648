@@ -1,0 +1,95 @@
+body{
+    width:960px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 1em;
+    line-height: 2em;
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left:20px;
+}
+
+ul:first-of-type {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+
+a, h2{
+    color: #CC1C0D;
+    
+}
+
+h2{
+    border-radius: 4px;
+    padding-left: 10px;
+    border-color: #929CA4 ;
+    background-color: #DFE3E6 ;
+    border-style: solid;
+}
+
+img{
+    float: left;
+    margin-top: 7px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 3px;
+ 
+}
+section img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 60px;
+    border-color: red;
+    border-style: solid;
+   
+}
+
+.pricing {
+	width: 1000px;	
+}
+
+
+.pricing div {
+    float: left;
+    padding-top: 20px;
+	width: 200px;
+    margin-right: 10px;
+    border-color: #929CA4;
+    border-style: solid;
+    border-width: 2px;
+	border-radius: 15px;
+	text-align: center;
+	
+}
+
+.pricing div:nth-child(1) h3{
+    border-top: 10px solid #CC1C0D; 
+}
+
+.pricing div:nth-child(2) h3{
+    border-top: 10px solid #37A4A4;  
+}
+
+.pricing div:nth-child(3) h3{
+    border-top: 10px solid #685288;  
+}
+
+.pricing div:nth-child(4) h3{ 
+    border-top: 10px solid #000000;
+    
+}
+
+.pricing div:nth-child(4){
+    padding-top: 42px;   
+}
+
+.pricing div img {
+	float:none ;
+    border: none;
+}
+
+p[id^="v"]{
+    font-weight: bolder;
+}
