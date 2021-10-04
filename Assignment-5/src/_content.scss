@@ -1,0 +1,83 @@
+#headline {
+    @include set_dimensions(100%, 130px);
+    background: $headlineBackground;
+    text-align: center;
+    margin: 0 auto;
+    h1 {
+        color: $white;
+        font-size: 2.5em;
+        font-weight: 100;
+        padding-top: div(100px, 2);
+        @include break(767px) {
+            font-size: 2em;
+            padding-top: 50px;
+        }
+        @include break(459px) {
+            font-size: 1.5em;
+            padding-top: 30px;
+        }
+    }
+}
+
+#content {
+    width: 940px;
+    margin: 20px auto;
+    h3 {
+        color: $grey;
+        font-size: 2em;
+        font-weight: 400;
+        @include break(459px) {
+            font-size: 1.6em;
+        }
+    }
+    #products {
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+        article {
+            margin-bottom: 40px;
+        }
+        h4 {
+            line-height: 1em;
+        }
+        width: 460px;
+        float: left;
+    }
+    #testimonials {
+        width: 460px;
+        float: right;
+    }
+    @include break(959px) {
+        width: inherit;
+    }
+    > #testimonials,
+    > #products {
+        @include break(959px) {
+            width: (46 / 100) * 100%;
+            margin: 0 2%;
+        }
+
+        @include break(767px) {
+            width: 96%;
+            margin: 0 2%;
+            float: none;
+        }
+    }
+}
+
+.greybar {
+    @include set_dimensions(100%, 90px);
+    background: $greybarBackground;
+    clear: both;
+    padding-top: 30px;
+}
+
+body {
+    > #content article img,
+    > .greybar {
+        @include break(459px) {
+            display: none;
+        }
+    }
+}

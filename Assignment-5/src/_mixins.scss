@@ -1,0 +1,32 @@
+@mixin set_dimensions($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin navbar($width, $height, $float) {
+    @include set_dimensions($width, $height);
+    float: $float;
+}
+
+@mixin Clearfix($clear: "") {
+    clear: $clear;
+}
+
+@mixin headers($color, $font-wt, $font-size, $line-ht: 0) {
+    color: $color;
+    font-weight: $font-wt;
+    font-size: $font-size;
+    line-height: $line-ht;
+}
+
+@mixin socialmediaImage($value) {
+    background: url($socialmediaImageFooter) -38px * $value 0;
+}
+
+@mixin break($args...) {
+    @if length($args) == 1 {
+        @media (max-width: nth($args, 1)) {
+            @content;
+        }
+    }
+}

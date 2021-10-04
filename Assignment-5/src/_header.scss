@@ -1,0 +1,57 @@
+header {
+    width: inherit;
+    @include Clearfix(both);
+    text-align: center;
+    padding-top: 40px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    @include break(767px) {
+        margin-bottom: 100px;
+    }
+    @include break(459px) {
+        margin-bottom: 80px;
+    }
+}
+
+header h1 {
+    @include headers($red, 100, 4em);
+    @include break(959px) {
+        font-size: 3em;
+    }
+    @include break(767px) {
+        font-size: 2em;
+    }
+    @include break(459px) {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+}
+
+header h2 {
+    @include headers($white, 900, 2.5em);
+    margin-bottom: 70px;
+    @include break(959px) {
+        font-size: 1.5em;
+    }
+    @include break(767px) {
+        font-size: 1em;
+    }
+    @include break(459px) {
+        font-size: 1.4em;
+    }
+}
+
+header h3 {
+    @include headers($grey, 400, 2em);
+    margin-bottom: 50px;
+    @include break(767px) {
+        font-size: 1.5em;
+    }
+    @include break(459px) {
+        color: $white;
+        font-size: 1em;
+    }
+}

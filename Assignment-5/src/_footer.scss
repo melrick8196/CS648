@@ -1,0 +1,41 @@
+footer {
+    @include set_dimensions(100%, 120px);
+    background: $footerBackground;
+    text-align: center;
+    color: $white;
+    padding-top: 50px;
+    @include break(459px) {
+        text-align: center;
+    }
+    > p,
+    > img {
+        float: none;
+        margin: 0;
+    }
+}
+
+.social-media {
+    margin: 0 auto;
+    width: 165px;
+    a {
+        display: block;
+        text-indent: -9999px;
+        @include set_dimensions(36px, 36px);
+    }
+    div {
+        float: left;
+        margin-right: 5px;
+    }
+    div.one {
+        @include socialmediaImage(0);
+    }
+    div.two {
+        @include socialmediaImage(1);
+    }
+    div.three {
+        @include socialmediaImage(2);
+    }
+    div.four {
+        @include socialmediaImage(3);
+    }
+}
