@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part-5</title>
+    <script src="js/part5.js"></script>
+    <script>
+        window.document.addEventListener("DOMContentLoaded", init);
+        function init() {
+            "use strict";
+                var myOtherButton3 = window.document.getElementById("button4")
+                myOtherButton3.addEventListener("click", function() {
+                window.alert("I have been clicked.")
+            });
+        }
+    </script> 
+</head>
+<body>
+    <section>
+        <p>Old ways of operating HTML attribute method</p>
+        <button onclick="displayMessage()">Show Message</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <p>Element Property method</p>
+        <button id="button1">Show Message</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <p>Event Listener through User Defined Function</p>
+        <button id="button2">Show Message</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <p>Event Listener through Callback Function</p>
+        <button id="button3">Show Message</button>
+    </section>
+    
+    <hr>
+
+    <section>
+        <p>Event Listener method</p>
+        <button id="button4">Show Message</button>
+    </section>
+    
+    <hr>
+
+    
+</body>
+</html>
